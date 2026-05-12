@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instituto Patria La Lima</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: #0a7f3f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+/* MENU */
+nav {
+    background: #064d27;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #0a7f3f;
+}
+
+/* CARRUSEL */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 500px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: white;
+
+}
+
+/* BOTONES */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 15px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* CONTENIDO */
+.section {
+    padding: 30px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    color: #0a7f3f;
+}
+
+/* BOTON */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #0a7f3f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #064d27;
+}
+
+/* VIDEO */
+.video {
+    text-align: center;
+    margin: 20px;
+
+}
+
+
+iframe {
+    width: 90%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+
+
+/* FOOTER */
+footer {
+    background: #064d27;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .social a {
+    color: #00ffcc;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .social a:hover {
+    text-decoration: underline;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<header id="inicio"> 
+
+<img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\logo.png" class="logo">
+
+    <h1>Instituto Patria La Lima</h1>
+    <p>Formando profesionales para el futuro</p>
+</header>
+
+<nav>
+    <a href="#informatica">Informática</a>
+    <a href="#contaduria">Contaduría y Finanzas</a>
+    <a href="#mercadotecnia">Mercadotecnia</a>
+    <a href="#bilingue">Asistente Ejecutivo Bilingüe</a>
+    <a href="#humanidades">Humanidades</a>
+    <a href="#admin">Administración de Empresas</a>
+</nav>
+
+<!-- CARRUSEL -->
+<div class="carousel">
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\informatica.jpeg"></div>
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\info3.jpeg"></div>
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\info4.jpeg"></div>
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\finanzas.jpeg"></div>
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\finanzas2.jpeg"></div>
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\finanz3.jpeg"></div>
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\merka.jpeg"></div>  
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\merka2.jpeg"></div>
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\aeb.jpeg"></div>       
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\aeb2.jpeg"></div>
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\aeb3.jpeg"></div>
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\bch.jpeg"></div>  
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\bch2.jpeg"></div>   
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\bch3.jpeg"></div> 
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\admin.jpeg"></div> 
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\admin2.jpeg"></div> 
+    <div class="slide"><img src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\imagenes\admin3.jpeg"></div> 
+
+    <div class="prev" onclick="mover(-1)">❮</div>
+    <div class="next" onclick="mover(1)">❯</div>
+</div>
+
+<!-- VIDEO -->
+<div class="video">
+    <h2>Conoce nuestro Instituto</h2>
+   <video controls autoplay muted loop>
+    <source src="C:\Users\User\OneDrive\Documentos\DesarrolloProyecto\carreras.mp4" type="video/mp4">
+</video>
+</div>
+
+<!-- CARRERAS -->
+
+<div class="section" id="informatica">
+<h2>Informática</h2>
+<p>La carrera de informática forma profesionales capaces de desarrollar software, administrar sistemas y resolver problemas tecnológicos. Los estudiantes adquieren habilidades en programación, redes y diseño web.</p>
+<a href="#inicio" class="btn">Volver al inicio</a>
+</div>
+
+<div class="section" id="contaduria">
+<h2>Contaduría y Finanzas</h2>
+<p>Esta carrera prepara a los estudiantes en el manejo de registros contables, análisis financiero y toma de decisiones empresariales. Es ideal para quienes desean trabajar en empresas o negocios propios.</p>
+<a href="#inicio" class="btn">Volver al inicio</a>
+</div>
+
+<div class="section" id="mercadotecnia">
+<h2>Mercadotecnia</h2>
+<p>Enfocada en estrategias de mercado, publicidad y ventas. Los estudiantes aprenden a analizar el comportamiento del consumidor y a crear campañas efectivas.</p>
+<a href="#inicio" class="btn">Volver al inicio</a>
+</div>
+
+<div class="section" id="bilingue">
+<h2>Asistente Ejecutivo Bilingüe</h2>
+<p>Forma profesionales con dominio del inglés y habilidades administrativas. Los estudiantes aprenden comunicación empresarial, atención al cliente y gestión de oficina.</p>
+<a href="#inicio" class="btn">Volver al inicio</a>
+</div>
+
+<div class="section" id="humanidades">
+<h2>Humanidades</h2>
+<p>La carrera de humanidades desarrolla el pensamiento crítico, la comunicación y el análisis social, preparando a los estudiantes para diversas áreas académicas y profesionales.</p>
+<a href="#inicio" class="btn">Volver al inicio</a>
+</div>
+
+<div class="section" id="admin">
+<h2>Administración de Empresas</h2>
+<p>Esta carrera enseña a gestionar empresas, liderar equipos y tomar decisiones estratégicas. Es ideal para quienes desean emprender o dirigir organizaciones.</p>
+<a href="#inicio" class="btn">Volver al inicio</a>
+</div>
+
+
+
+<script>
+let index = 0;
+let slides = document.getElementsByClassName("slide");
+
+function mostrarSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    index++;
+    if (index > slides.length) { index = 1 }
+    slides[index - 1].style.display = "block";
+    setTimeout(mostrarSlides, 3000);
+}
+
+function mover(n) {
+    index += n - 1;
+    if (index >= slides.length) index = 0;
+    if (index < 0) index = slides.length - 1;
+    mostrarManual();
+}
+
+function mostrarManual() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[index].style.display = "block";
+}
+
+mostrarSlides();
+</script>
+
+
+
+<footer>
+    <p><strong>Instituto Patria La Lima</strong></p>
+    <p>Educando con exelencia</p>
+   
+
+    <div class="social">
+        <a href="#">Tania Sofia Murillo Hernandez</a>
+        <a href="#">12 BTP Informatica</a>
+        <a href="#">Matutina</a>
+    </div>
+
+    <p>© 2026 </p>
+</footer>
+
+</body>
+</html>
